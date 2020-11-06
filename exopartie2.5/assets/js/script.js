@@ -1,25 +1,31 @@
-let dayStr =prompt("chiffre");
-let day = "";
-switch (parseInt(dayStr)){
-    case 1:
-      day = "Sunday";
-      break;
-    case 2:
-      day = "Monday";
-      break;
-    case 3:
-       day = "Tuesday";
-      break;
-    case 4:
-      day = "Wednesday";
-      break;
-    case 5:
-      day = "Thursday";
-      break;
-    case 6:
-      day = "Friday";
-      break;
-    case 7:
-      day = "Saturday";
-  }
-  alert (day);
+let day = prompt("Choisissez un nombre entre 1 et 7");
+ let dayReturn;
+
+ switch (parseInt(day)) {
+     default:
+         dayReturn = "Ce n'est pas un jour de la semaine";
+         break;
+     case 1:
+         dayReturn = "Lundi";
+         break;
+     case 2:
+         dayReturn = "Mardi";
+         break;
+     case 3:
+         dayReturn = "Mercredi";
+         break;
+     case 4:
+         dayReturn = "Jeudi";
+         break;
+     case 5:
+         dayReturn = "Vendredi";
+         break;
+     case 6:
+         dayReturn = "Samedi";
+         break;
+     case 7:
+         dayReturn = "Dimanche";
+         break;
+ }
+
+ window.alert(dayReturn);
