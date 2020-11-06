@@ -1,6 +1,6 @@
 function verifyPassword() {
-    let regexMail = new RegExp(/^[A-Za-z0-9][@]+$/);
-    let regexName = new RegExp(/^[A-Za-z][a-z]+$/);
+    let regexMail = new RegExp(/^[A-Za-z]+[@]+$/);
+    let regexName = new RegExp(/^[A-Za-z]+$/);
     let regexAge = new RegExp(/^[0-9]+$/);
     let name = document.getElementById("name");
     let email = document.getElementById("email");
