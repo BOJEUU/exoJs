@@ -3,7 +3,7 @@
 //  bojeu.style.transform = "rotate(45deg)";
 //   }
 
-let bojeuAdd=1;
+let bojeuAdd=10;
 let bojeuStart=0;
 function bojeu(event){
     let bojeu=document.getElementById("jeu");
