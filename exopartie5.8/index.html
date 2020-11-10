@@ -12,25 +12,39 @@
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 
-<body class="d-flex flex-column align-items-center">
-  <div>
-  <form class="text-center" id="parentForm">
-    <p>clone moi ça</p>
-    <div id="name">
-      <label for="name">Prénom</label>
-      <input type="text">
+<body>
+  <div class="container-fluid h-100">
+    <div class="row h-100 justify-content-center">
+      <div class="col-4 b_green d-flex align-items-center justify-content-center text-center">
+        <div class="formContainer d-flex flex-column align-items-center justify-content-center m-2">
+          <div>
+            <form id="parentForm">
+              <p class="h5 mb-3">Entrer vos informations personnelles</p>
+              <div id="houleNode">
+                <div id="name0" class="form-groupd mt-1">
+                  <label for="pwd_a">Prénom:</label>
+                  <input type="text" id="firstName" class="form-control" onfocus="changeBorder(id)"
+                    onblur="changeBorder(id)" placeholder="Entrer votre prénom" minlength="1" maxlength="8" size="35"
+                    autocomplete="off" required="">
+                </div>
+                <div id="age0" class="form-groupd mt-1">
+                  <label for="pwd_b">Âge:</label>
+                  <input type="text" id="age" class="form-control" onfocus="changeBorder(id)" onblur="changeBorder(id)"
+                    placeholder="Entrer votre âge" minlength="1" maxlength="8" size="35" autocomplete="off" required="">
+                </div>
+              </div>
+            </form>
+          </div>
+          <div>
+            <input id="btnTxt" type="button" class="btn btn-primary mt-3" value="Kage Bunshin no Jutsu"
+              onclick="duplicateDiv()">
+          </div>
+        </div>
+      </div>
     </div>
-    <div id="age">
-      <label for="age">Age</label>
-      <input type="text">
-    </div>
-
-
-  </form>
-</div>
-  <div class="text-center">
-    <button type="button" class="btn btn-primary" onclick="bojeu()">bojeu</button>
   </div>
+
+
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="assets/js/script.js"></script>

@@ -1,24 +1,70 @@
-//   function bojeu(){
-//  let bojeu = document.getElementById("jeu");
-//  bojeu.style.transform = "rotate(45deg)";
-//   }
+// const pTextElement = document.getElementById("pText");
 
-let bojeuAdd=10;
-let bojeuStart=0;
-function bojeu(event){
-    let bojeu=document.getElementById("jeu");
-    if (event.deltaY<0){
-        console.log("up");
-        bojeuStart+=bojeuAdd;
-        console.log(bojeuStart);
-        bojeu.style.transform=`rotate(${bojeuStart}deg)`;
+// function upSize() {
+//     pTextElement.style.fontSize = "2rem";
+// }
 
-    }else {
-        console.log("down");
-        bojeuStart-=bojeuAdd;
-        console.log(bojeuStart);
-        bojeu.style.transform=`rotate(${bojeuStart}deg)`;
-    }
+// pTextElement.onwheel = upSize;
 
+const titleElement = document.getElementById("title");
+const subTitleElement = document.getElementById("subTitle");
+
+subTitleElement.onclick = changeColor ;
+
+function changeColor(){
+    titleElement.style.color = "red";
 }
- 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// let bojeuAdd=10;
+// let bojeuStart=0;
+// function bojeu(event){
+//     let bojeu=document.getElementById("jeu");
+//     if (event.deltaY<0){
+//         console.log("up");
+//         bojeuStart+=bojeuAdd;
+//         console.log(bojeuStart);
+//         bojeu.style.transform=`rotate(${bojeuStart}deg)`;
+
+//     }else {
+//         console.log("down");
+//         bojeuStart-=bojeuAdd;
+//         console.log(bojeuStart);
+//         bojeu.style.transform=`rotate(${bojeuStart}deg)`;
+//     }
+
+// }
